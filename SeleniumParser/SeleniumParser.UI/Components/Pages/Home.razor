@@ -1,0 +1,11 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<div style="display:flex; flex-direction:column; gap:0.5rem;">
+    <div style="display:flex; gap: 0.5rem; ">
+        <input style="width:250px;" @bind-value=@url/>
+        <button @onclick=GetPage> Search </button>
+    </div>
+<iframe id="myIframe" srcdoc="@srcdoc"></iframe>
+</div>
